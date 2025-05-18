@@ -1,5 +1,4 @@
 import { Card } from "../components"
-import { useState } from "react"
 
 export const CardList = () => {
   
