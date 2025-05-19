@@ -2,7 +2,7 @@ import { Button } from "./Button";
 import { useCart } from "../context/CartContext";
 import { useEffect } from "react";
 
-export const Card = ({ item }) => {
+export const CartCard = ({ item }) => {
   const { cart, addToCart } = useCart();
 
   const image_path = item.image_path;

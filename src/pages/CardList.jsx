@@ -8,7 +8,7 @@ export const CardList = () => {
       id: 1,
       name: "P9",
       discription: "A new way of headset",
-      price: 140,
+      price: 240,
       image_path:
         "https://images.unsplash.com/photo-1545127398-14699f92334b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
@@ -24,7 +24,7 @@ export const CardList = () => {
       id: 3,
       name: "JBL",
       discription: "simple to use",
-      price: 140,
+      price: 120,
       image_path:
         "https://plus.unsplash.com/premium_photo-1706548331061-39efd6912860?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
@@ -32,7 +32,7 @@ export const CardList = () => {
       id: 4,
       name: "BoAlT",
       discription: "Way to confort",
-      price: 140,
+      price: 100,
       image_path:
         "https://images.unsplash.com/photo-1583394838336-acd977736f90?q=80&w=1368&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     }
