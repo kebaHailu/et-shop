@@ -1,12 +1,54 @@
-# React + Vite
+# ET-Shopping
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ET-Shopping is a simple e-commerce web application built with React. This project demonstrates various front-end development concepts and practices.
 
-Currently, two official plugins are available:
+## Learning Outcomes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Through this project, the following concepts were implemented and learned:
 
-## Expanding the ESLint configuration
+- **React Component Architecture**: Building reusable components like Cards, Buttons, and Navigation elements
+- **Context API**: Managing global state for the shopping cart functionality
+- **Responsive Design**: Creating a mobile-friendly interface using Tailwind CSS
+- **Event Handling**: Implementing user interactions like adding/removing items from cart
+- **Props and State Management**: Passing data between components and managing component state
+- **Conditional Rendering**: Displaying different UI elements based on application state
+- **Effect Hooks**: Using useEffect for side effects in functional components
+- **JavaScript Array Methods**: Utilizing map, some, and other array methods for data manipulation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+Follow these steps to set up the project locally:
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/kebaHailu/ET-Shopping.git
+   cd ET-Shopping
+   ```
+
+2. Install dependencies:
+   ```
+   npm install
+   ```
+
+3. Start the development server:
+   ```
+   npm run dev
+   ```
+
+4. Open your browser and navigate to:
+   ```
+   http://localhost:5173
+   ```
+
+## Features
+
+- Browse product catalog
+- Add/remove items to cart
+- View cart with total price calculation
+- Responsive design for various screen sizes
+
+## Technologies Used
+
+- React
+- Tailwind CSS
+- Vite
