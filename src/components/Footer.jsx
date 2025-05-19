@@ -8,11 +8,7 @@ export const Footer = () => {
             href="https:realpick.tech"
             className="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
-            <img
-              src= {Logo}
-              className="h-8"
-              alt="Flowbite Logo"
-            />
+            <img src={Logo} className="h-8" alt="Flowbite Logo" />
             <span className="self-center text-2xl font-semibold whitespace-nowrap ">
               ET-Shopping
             </span>
@@ -43,7 +39,7 @@ export const Footer = () => {
         <hr className="my-6 border-gray-200 sm:mx-auto  lg:my-8" />
         <span className="block text-sm text-gray-500 sm:text-center ">
           © 2025{" "}
-          <a href="https://flowbite.com/" className="hover:underline">
+          <a href="https://github.com/kebaHailu//" className="hover:underline">
             ET-Shopping™
           </a>
           . All Rights Reserved.
