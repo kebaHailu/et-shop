@@ -1,6 +1,5 @@
 import { Button } from "./Button";
 import { useCart } from "../context/CartContext";
-import { useEffect } from "react";
 
 export const Card = ({ item }) => {
   const { cart, addToCart } = useCart();
@@ -15,15 +14,13 @@ export const Card = ({ item }) => {
   };
   const inCart = cart.some((cartItem) => cartItem.id === item.id);
 
-  useEffect(() => {
-    console.log("Cart updated:", cart);
-  }, [cart]);
+
 
   return (
     <>
       <div
-        className={`max-w-sm m-1 ${
-          inCart ? "bg-gray-100" : "bg-white"
+        className={`w-72 h-96 m-1 ${
+          inCart ? "bg-red-100" : "bg-white"
         } rounded-lg shadow-sm hover:shadow-xl`}
       >
         <a href="#">
@@ -39,16 +36,15 @@ export const Card = ({ item }) => {
               {item.name}
             </h5>
           </a>
-          <div className="flex justify-between">
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+          <div className="flex justify-between items-start h-20">
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3 flex-1 mr-2">
               {item.discription}
             </p>
-            <p className="mb-3 font-bold text-right text-orange-700 ">
+            <p className="mb-3 font-bold text-right text-orange-700 whitespace-nowrap">
               ${item.price}
             </p>
           </div>
-          <div className="flex justify-between">
-            <Button>See more</Button>
+          <div className="flex justify-between mt-auto">
             <Button customFunction={() => handleAddToCart(item)}>
               {inCart ? "Remove item" : "Add To Cart"}
             </Button>

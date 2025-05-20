@@ -22,7 +22,7 @@ export const CartCard = ({ item }) => {
   return (
     <>
       <div
-        className={`max-w-sm m-1 ${
+        className={`w-72 h-96 m-1 ${
           inCart ? "bg-gray-100" : "bg-white"
         } rounded-lg shadow-sm hover:shadow-xl`}
       >
@@ -48,7 +48,6 @@ export const CartCard = ({ item }) => {
             </p>
           </div>
           <div className="flex justify-between">
-            <Button>See more</Button>
             <Button customFunction={() => handleAddToCart(item)}>
               {inCart ? "Remove item" : "Add To Cart"}
             </Button>
