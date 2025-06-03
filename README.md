@@ -1,19 +1,21 @@
 # ET-Shopping
 
-ET-Shopping is a simple e-commerce web application built with React. This project demonstrates various front-end development concepts and practices.
+ET-Shopping is a simple e-commerce web application built with React and Redux. This project demonstrates various front-end development concepts and practices.
 
 ## Learning Outcomes
 
 Through this project, the following concepts were implemented and learned:
 
 - **React Component Architecture**: Building reusable components like Cards, Buttons, and Navigation elements
-- **Context API**: Managing global state for the shopping cart functionality
+- **Redux State Management**: Using Redux Toolkit for centralized state management of the shopping cart
+- **Redux Actions & Reducers**: Implementing cart functionality through Redux actions and reducers
 - **Responsive Design**: Creating a mobile-friendly interface using Tailwind CSS
 - **Event Handling**: Implementing user interactions like adding/removing items from cart
-- **Props and State Management**: Passing data between components and managing component state
-- **Conditional Rendering**: Displaying different UI elements based on application state
+- **Props and State Management**: Passing data between components and managing application state
+- **Conditional Rendering**: Displaying different UI elements based on Redux store state
 - **Effect Hooks**: Using useEffect for side effects in functional components
 - **JavaScript Array Methods**: Utilizing map, some, and other array methods for data manipulation
+- **Redux Selectors**: Efficiently accessing and deriving data from the Redux store
 
 ## Installation
 
@@ -43,12 +45,14 @@ Follow these steps to set up the project locally:
 ## Features
 
 - Browse product catalog
-- Add/remove items to cart
-- View cart with total price calculation
+- Add/remove items to cart using Redux actions
+- Real-time cart total calculation through Redux state
+- Persistent cart state management
 - Responsive design for various screen sizes
 
 ## Technologies Used
 
 - React
+- Redux Toolkit
 - Tailwind CSS
 - Vite
