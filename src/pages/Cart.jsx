@@ -1,7 +1,8 @@
-import { useCart } from "../context/CartContext"
 import { CartCard } from "../components/CartCard"
+import { useSelector } from "react-redux";
 export const Cart = () => {
-  const {total, cart} = useCart();
+  const cart = useSelector(state => state.cartState.cartList);
+  const total = useSelector(state => state.cartState.total)
   console.log(total)
   return (
     <main>

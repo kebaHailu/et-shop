@@ -1,10 +1,10 @@
 import Logo from "../assets/images/logo.png";
-import { Link, NavLink } from "react-router-dom";
-import { useCart } from "../context/CartContext";
+import {  NavLink } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { useState } from "react";
 
 export const Header = () => {
-  const { cart } = useCart();
+  const cart = useSelector(state => state.cartState.cartList) 
   const notificationCount = cart.length;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 

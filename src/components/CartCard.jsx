@@ -1,17 +1,16 @@
 import { Button } from "./Button";
-import { useCart } from "../context/CartContext";
 import { useEffect } from "react";
-
+import { add, remove } from "../store/cartSlice"
+import { useDispatch } from "react-redux";
 export const CartCard = ({ item }) => {
-  const { cart, addToCart } = useCart();
-
+  const dispatch = useDispatch(); 
   const image_path = item.image_path;
   const default_url =
     "https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg";
   const base_url = image_path ? image_path : default_url;
 
   const handleAddToCart = (product) => {
-    addToCart(product);
+    dispatch(add(product));
   };
   const inCart = cart.some((cartItem) => cartItem.id === item.id);
 
