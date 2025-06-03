@@ -1,16 +1,21 @@
 import { Button } from "./Button";
 import { useEffect } from "react";
 import { add, remove } from "../store/cartSlice"
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 export const CartCard = ({ item }) => {
   const dispatch = useDispatch(); 
+  const cart = useSelector((state) => state.cartState.cartList);
   const image_path = item.image_path;
   const default_url =
     "https://www.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-600nw-1037719192.jpg";
   const base_url = image_path ? image_path : default_url;
 
-  const handleAddToCart = (product) => {
-    dispatch(add(product));
+  const handleCart = (product) => {
+    if (inCart) {
+      dispatch(remove(product));
+    } else {
+      dispatch(add(product));
+    }
   };
   const inCart = cart.some((cartItem) => cartItem.id === item.id);
 
@@ -47,8 +52,8 @@ export const CartCard = ({ item }) => {
             </p>
           </div>
           <div className="flex justify-between">
-            <Button customFunction={() => handleAddToCart(item)}>
-              {inCart ? "Remove item" : "Add To Cart"}
+              <Button customFunction={() => handleCart(item)}>
+              {inCart ? "Remove from Cart" : "Add To Cart"}
             </Button>
           </div>
         </div>
